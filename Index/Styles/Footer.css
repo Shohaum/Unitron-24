@@ -1,0 +1,199 @@
+/* Importing Google font - Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+.footer {
+  width: 100%;
+  font-family: "Open Sans";
+  background: #10182F;
+  border-radius: 6px;
+}
+
+.footer .footer-row {
+  display: grid;
+  grid-template-columns: 0.8fr auto 1fr 0.8fr;
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+
+.footer-row .footer-col h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+
+.footer-unitron > ul{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-unitron > ul > li{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.footer-info{
+  justify-self: center;
+}
+
+.footer-col .links {
+  margin-top: 20px;
+}
+
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+
+.footer-col .links li a:hover {
+  color: #fff;
+}
+
+.footer-col p {
+  margin: 20px 0;
+  color: #bfbfbf;
+  max-width: 300px;
+}
+
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #7489C6 ;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+  color: #ccc;
+}
+
+ .footer-col form button {
+  background: #fff;
+  color: #000;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+  background: #cecccc;
+}
+
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.footer-col .icons i {
+  color: #afb6c7;
+}
+
+.footer-col .icons i:hover  {
+  color: #fff;
+}
+
+.contact > h4{
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 400;
+}
+
+.contact>form
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.contact > form > input, .contact > form > textarea{
+  width: 100%;
+  border: 1px solid #7489C6;
+  border-radius: 0.3rem;
+  outline: none;
+  background-color: transparent;
+  padding: 0.3rem 0.5rem;
+  color: #ccc;
+}
+
+.contact > form > input{
+  padding: 0.4rem 0.5rem;
+}
+
+.contact > form > input::placeholder, .contact > form > textarea::placeholder{
+  color: #ccc;
+}
+
+.contact > form > textarea{
+  resize: none;
+}
+
+.contact button{
+  font-weight: 500;
+  color: #000;
+  padding: 0.7rem 2rem;
+  border-radius: 0.4rem;
+  letter-spacing: 1px;
+  background: #fff;
+}
+
+.footer-copyright{
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  gap: 1.3rem;
+  font-family: "Open Sans";
+  letter-spacing: 1px;
+  font-size: 0.85rem;
+  color: gray
+}
+
+.footer-copyright > span{
+  position: relative;
+}
+
+.footer-copyright >  span::before{
+  content: "\00a9";
+  position: absolute;
+  left: -15px;
+}
+
+@media screen and (max-width: 900px) {
+  .footer .footer-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .footer .footer-row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .footer-info{
+    justify-self: left;
+  }
+}

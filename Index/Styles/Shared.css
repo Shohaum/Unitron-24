@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Cyberpunk';
+  src: url('../Cyberpunk-Regular.ttf');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+
+body {
+  color: #fff;
+  margin: 0;
+  height: 100vh;
+  font-family: "Roboto Condensed", sans-serif;
+  background: #000000;
+}
+
+a{
+  font-family: "Roboto Condensed", sans-serif;
+  text-decoration: none;
+  color: #fff;
+}
+
+svg{
+  display: block;
+}
+
+button{
+  background: none;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+img{
+    width: 100%;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}

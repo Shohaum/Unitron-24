@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./Styles/Shared.css">
+    <link rel="stylesheet" href="./Styles/Navbar.css" />
+    <link rel="stylesheet" href="./Styles/HeroHome.css">
+    <link rel="stylesheet" href="./Styles/About.css">
+    <link rel="stylesheet" href="./Styles/EventCards.css">
+    <link rel="stylesheet" href="./Styles/CollapseGallery.css">
+    <link rel="stylesheet" href="./Styles/NewEvents.css">
+    <link rel="stylesheet" href="./Styles/Sponser.css">
+    <link rel="stylesheet" href="./Styles/Footer.css">
+</head>
+
+<body>
+
+    <!-- Nav -->
+    <div class="nav">
+        <img src="./logo.png" class="unitronLogo" alt="UnitronLogo" contenteditable="false" />
+        <ul class="nav-menu">
+            <li>
+                <a href="#" class="three-d">
+                    Home
+                    <span class="three">
+                        <span class="front">Home</span>
+                        <span class="back">Home</span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="three-d">
+                    About
+                    <span class="three"><span class="front">About</span><span class="back">About</span></span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="three-d">
+                    Blog
+                    <span class="three"><span class="front">Blog</span><span class="back">Blog</span></span>
+                </a>
+                <ul class="clearfix unstyled drop-menu">
+                    <li>
+                        <a href="#" class="three-d">
+                            Html5
+                            <span class="three"><span class="front">Html5</span><span class="back">Html5</span></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="three-d">
+                            Css3
+                            <span class="three"><span class="front">Css3</span><span class="back">Css3</span></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="three-d">
+                            JavaScript
+                            <span class="three"><span class="front">JavaScript</span><span
+                                    class="back">JavaScript</span></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="three-d">
+                            Videogames
+                            <span class="three"><span class="front">Videogames</span><span
+                                    class="back">Videogames</span></span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="three-d">
+                    Shop On-line
+                    <span class="three"><span class="front">Schedule</span><span class="back">Schedule</span></span>
+                </a>
+            </li>
+        </ul>
+        <button class="hamburger">
+            <svg class="open" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#ffffff"
+                viewBox="0 0 256 256">
+                <path
+                    d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z">
+                </path>
+            </svg>
+            <svg class="close displayNone" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#ffffff"
+                viewBox="0 0 256 256">
+                <path
+                    d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z">
+                </path>
+            </svg>
+        </button>
+    </div>
+    <aside class="sidebar">
+        <ul class="nav-menu sidebarLink">
+            <li>
+                <a href="#" class="three-d">
+                    Home
+                    <span class="three">
+                        <span class="front">Home</span>
+                        <span class="back">Home</span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="three-d">
+                    About
+                    <span class="three"><span class="front">About</span><span class="back">About</span></span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="three-d">
+                    Contact
+                    <span class="three"><span class="front">Contact</span><span class="back">Contact</span></span>
+                </a>
+            </li>
+            <li class="sidebar-events">
+                <a href="#" class="three-d">
+                    Blog
+                    <span class="three"><span class="front">Blog</span><span class="back">Blog</span></span>
+                </a>
+                <div class="subMenu">
+                    <ul class="clearfix unstyled drop-menu sidebar-drop-down">
+                        <li>
+                            <a href="#" class="three-d">
+                                Html5
+                                <span class="three"><span class="front">Html5</span><span
+                                        class="back">Html5</span></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="three-d">
+                                Css3
+                                <span class="three"><span class="front">Css3</span><span class="back">Css3</span></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="three-d">
+                                JavaScript
+                                <span class="three"><span class="front">JavaScript</span><span
+                                        class="back">JavaScript</span></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="three-d">
+                                Videogames
+                                <span class="three"><span class="front">Videogames</span><span
+                                        class="back">Videogames</span></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="three-d">
+                    Shop On-line
+                    <span class="three"><span class="front">Schedule</span><span class="back">Schedule</span></span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="three-d">
+                    FAQ
+                    <span class="three"><span class="front">FAQ</span><span class="back">FAQ</span></span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <main class="main">
+        <div class="hero-container">
+            <div class="home-hero">
+                <img src="./Assets/Unitron.png" alt="">
+            </div>
+        </div>
+
+        <!-- About Unitron -->
+        <div class="about">
+            <div class="about-image">
+                <div class="fadetop"></div>
+                <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/breaking_news/202401/ayodhya-ram-mandir-inauguration-live-updates-221114296-16x9_0.jpg?VersionId=Qe2FEMv4weIqsKVR1ZDItE2FnodIsnBc"
+                    alt="Inauguration">
+                <div class="fadeleft"></div>
+                <div class="home-gallery-content">
+                    <!-- <h4>Why don't you explore?</h4> -->
+                    <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, ipsa.</p> -->
+                    <button class="home-gallery-btn">Experience
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff"
+                            viewBox="0 0 256 256">
+                            <path
+                                d="M237.2,151.87v0a47.1,47.1,0,0,0-2.35-5.45L193.26,51.8a7.82,7.82,0,0,0-1.66-2.44,32,32,0,0,0-45.26,0A8,8,0,0,0,144,55V80H112V55a8,8,0,0,0-2.34-5.66,32,32,0,0,0-45.26,0,7.82,7.82,0,0,0-1.66,2.44L21.15,146.4a47.1,47.1,0,0,0-2.35,5.45v0A48,48,0,1,0,112,168V96h32v72a48,48,0,1,0,93.2-16.13ZM76.71,59.75a16,16,0,0,1,19.29-1v73.51a47.9,47.9,0,0,0-46.79-9.92ZM64,200a32,32,0,1,1,32-32A32,32,0,0,1,64,200ZM160,58.74a16,16,0,0,1,19.29,1l27.5,62.58A47.9,47.9,0,0,0,160,132.25ZM192,200a32,32,0,1,1,32-32A32,32,0,0,1,192,200Z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="about-content">
+                <h3>Jai Modi<span>tron</span></h3>
+                <p>
+                    A hub for innovation and technological advancement, invites you to join us for UNiTRON
+                    2024, a celebration of progress and the elegant power of technology, fostering collaboration
+                    and pushing boundaries.
+                </p>
+                <div class="community">
+                    <a href="#" class="community-link">
+                        <span>Our Community</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery -->
+        <div class="collapse-gallery">
+            <article>
+                <figure>
+                    <figcaption>
+                        <h1>
+                            Collapsible Gallery
+                        </h1>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, quasi.
+                        </p>
+                    </figcaption>
+                    </figcaption>
+
+                    <a href="" class="collapse-btn">
+                        <span>Hit me
+                            <input type="checkbox" name="init" id="init">
+                        </span>
+                    </a>
+
+                </figure>
+                <section>
+                    <div>
+                    </div>
+                    <div>
+                    </div>
+                    <div>
+                    </div>
+                    <div>
+                    </div>
+                    <div>
+                    </div>
+                    <div>
+                    </div>
+                    <div>
+                    </div>
+                    <div>
+                    </div>
+                    <div>
+                    </div>
+                    <div>
+                    </div>
+                    <div>
+                    </div>
+                </section>
+            </article>
+        </div>
+
+        <!-- Event Cards -->
+        <section class="event-section">
+            <h2 class="event-heading">Explore the arenas</h2>
+
+            <div class="event-container">
+                <p class="event-about">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    <span class="event-glow-red" style="--i:1"></span>
+                    <span class="event-glow-green" style="--i:3"></span>
+                </p>
+                <div class="event-cards">
+                    <div class="event-card tech-card" style="--i:1.5">
+                        <h3 class="event-card-heading">Tech</h3>
+                        <a href="#" class="event-link">Explore</a>
+                        <div class="modal"></div>
+                    </div>
+
+                    <div class="event-card robo-card" style="--i:0.5">
+                        <h3 class="event-card-heading">Robotics</h3>
+                        <a href="#" class="event-link">Explore</a>
+                        <div class="modal"></div>
+                    </div>
+
+                    <div class="event-card coding-card" style="--i:3">
+                        <h3 class="event-card-heading">Coding</h3>
+                        <a href="#" class="event-link">Explore</a>
+                        <div class="modal"></div>
+                    </div>
+
+                    <div class="event-card non-tech-card" style="--i:1.5">
+                        <h3 class="event-card-heading">Non-Tech</h3>
+                        <a href="#" class="event-link">Explore</a>
+                        <div class="modal"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What's new -->
+        <section class="new-events">
+            <div class="event-header">
+                <span class="new-event-info">What's new?</span>
+            </div>
+
+            <div class="events-container">
+                <div class="new-event">
+                    <div class="event-image" style="--i: 1">
+                        <img src="https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="new-event">
+                    <div class="event-image" style="--i: 2">
+                        <img src="https://cdn.pixabay.com/photo/2015/11/17/13/13/puppy-1047521_1280.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="new-event">
+                    <div class="event-image" style="--i: 3">
+                        <img src="https://cdn.pixabay.com/photo/2016/05/09/10/42/weimaraner-1381186_1280.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="new-event">
+                    <div class="event-image" style="--i: 4">
+                        <img src="https://cdn.pixabay.com/photo/2016/01/29/20/54/dog-1168663_1280.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sponser -->
+        <div class="sponsers">
+            <h3>Sponsers</h3>
+            <div class="sponser-container">
+                <h3>Revealing Soon</h3>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-row">
+                <div class="footer-unitron footer-col">
+                    <h4>Moditron</h4>
+                    <ul class="">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#a9a9a9"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z">
+                                </path>
+                            </svg>
+                            <span>Unitron'24@teamfuture.in</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#a9a9a9"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z">
+                                </path>
+                            </svg>
+                            <span>+916290976333</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#a9a9a9"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M229.33,98.21,53.41,33l-.16-.05A16,16,0,0,0,32.9,53.25a1,1,0,0,0,.05.16L98.21,229.33A15.77,15.77,0,0,0,113.28,240h.3a15.77,15.77,0,0,0,15-11.29l23.56-76.56,76.56-23.56a16,16,0,0,0,.62-30.38ZM224,113.3l-76.56,23.56a16,16,0,0,0-10.58,10.58L113.3,224h0l-.06-.17L48,48l175.82,65.22.16.06Z">
+                                </path>
+                            </svg>
+                            <span>Ramchandrapur, Narendrapur, Kolkata, West Bengal 700154</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-info">
+                    <h4>Info</h4>
+                    <ul class="links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Compressions</a></li>
+                        <li><a href="#">Customers</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Collection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>
+                        Subscribe to our newsletter for a weekly dose
+                        of news, updates, helpful tips, and
+                        exclusive offers.
+                    </p>
+                    <form action="#">
+                        <input type="text" placeholder="Feedback" required>
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+
+                </div>
+                <div class="contact">
+                    <h4>Contact</h4>
+                    <form onsubmit="handlesubmission()" id="contact-form" action="https://api.web3forms.com/submit"
+                        method="post">
+                        <label for="">
+                            <input type="hidden" name="access_key" value="1ebc8804-6670-41c9-a214-4b3f89e38a72">
+                        </label>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                        <textarea rows="6" placeholder="Message" id="message" name="message" required></textarea>
+                        <button type="submit" id="submit" name="submit">Send</button>
+
+                    </form>
+                    <div id="error"></div>
+                    <div id="success-msg"></div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <h4>Copyright</h4>
+                <span class="footer-year">Year</span>
+            </div>
+        </footer>
+    </main>
+    <script type="module" src="./Js/sidebar.js"></script>
+    <script src="./Js/Contact.js"></script>
+    <script src="./Js/NewEvent.js"></script>
+    <script src="./Js/Footer.js"></script>
+</body>
+
+</html>

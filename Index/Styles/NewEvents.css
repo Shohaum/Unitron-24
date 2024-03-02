@@ -1,0 +1,75 @@
+.new-events .event-header{
+    height: 10rem;
+    position: relative;
+    transition: all 0.3s linear;
+}
+
+.event-header > span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(600%);
+    cursor: pointer;
+    transition: all 0.3s linear;
+    transform-origin: center;
+}
+
+.new-event-opened .event-header{
+    height: 5rem;
+}
+
+.new-event-opened .new-event-info {
+    top: 20%;
+    transform: translate(-50%, -50%) scale(300%);
+}
+
+.events-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    height: 0;
+    width: 0;
+}
+
+.new-event-opened .events-container{
+    height: auto;
+    width: auto;
+}
+
+.event-image{
+    transform: scale(0);
+    clip-path: polygon(11% 0, 100% 0, 100% 78%, 88% 100%, 0 100%, 0 21%);
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transform-origin: left;
+    transition: all 0.5s cubic-bezier(0,-0.32, 0, 0.77);
+    transition-delay: calc(var(--i) * 250ms);
+}
+
+.new-event-opened .event-image{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+@media screen and (max-width: 650px){
+    .events-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 550px){
+    .event-header > span{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(400%);
+    }
+}
+
+@media screen and (max-width: 350px){
+    .events-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

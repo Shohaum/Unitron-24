@@ -1,0 +1,29 @@
+.hero-container{
+    padding: 1rem;
+}
+
+.home-hero {
+  height: 20rem;
+  display: grid;
+  place-content: center;
+}
+
+.home-hero > img {
+  filter: drop-shadow(5px 5px 8px #d10047);
+  width: 25rem;
+  transform: scale(0);
+  animation: scaleIn 500ms linear 300ms 1 forwards;
+}
+
+
+@keyframes scaleIn {
+  to{
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 414px){
+  .home-hero > img {
+    width: 20rem;
+  }
+}

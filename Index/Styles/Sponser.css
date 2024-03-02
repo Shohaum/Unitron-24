@@ -1,0 +1,14 @@
+.sponsers{
+    margin-top: 3rem;
+}
+
+.sponsers > h3{
+    text-align: center;
+    font-size: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+}
+
+.sponser-container{
+    height: 5rem;
+    display: grid;
+    place-content: center;
+}
