@@ -10,7 +10,7 @@
 
 .home-hero > img {
   filter: drop-shadow(-4px 2px 40px  #efeb0fb7 );
-  width: 30rem;
+  width: 40rem;
   opacity: 0;
   animation: fadeIn 1s linear 300ms 1 forwards;
 }
@@ -22,8 +22,14 @@
   }
 }
 
+@media screen and (max-width: 550px){
+  .home-hero > img {
+    width: 30rem;
+  }
+}
+
 @media screen and (max-width: 414px){
   .home-hero > img {
-    width: 20rem;
+    width: 22rem;
   }
 }
