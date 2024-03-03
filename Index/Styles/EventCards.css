@@ -1,5 +1,5 @@
 .event-section {
-  padding: 0 1rem;
+  padding: 0 2rem;
   margin-top: 1rem;
   margin-bottom: 3rem;
 }
@@ -10,15 +10,11 @@
   gap: 0.8rem;
 }
 
-.event-heading {
-  text-transform: capitalize;
-  margin-bottom: 1rem;
-}
-
 .event-about {
-  margin-top: 1rem;
-  font-size: 2rem;
+  margin: auto;
+  font-size: 3rem;
   position: relative;
+  text-transform: capitalize;
 }
 
 .event-glow-red, .event-glow-green {
@@ -154,12 +150,21 @@
   background-image: url("https://cdn.pixabay.com/photo/2017/12/29/10/47/animal-company-3047244_1280.jpg");
 }
 
+.event-card-glow{
+  filter: drop-shadow(2px 6px 10px transparent);
+}
+
+.event-card-glow:hover{
+  filter: drop-shadow(5px 5px 15px rgba(255, 0, 0, 0.575));
+  transition: all 0.3s ease-in-out;
+}
+
 .event-card {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 15rem;
-  width: 7rem;
+  height: 18rem;
+  width: 9rem;
   overflow: hidden;
   position: relative;
   margin-top: calc(var(--i) * 1.5rem);
@@ -178,8 +183,8 @@
 }
 
 .event-card:hover {
-  height: 18rem;
-  width: 8rem;
+  height: 20rem;
+  width: 10rem;
   margin-top: calc(var(--i) * 1.9rem);
 }
 
@@ -199,9 +204,10 @@
 
 .event-card-heading {
   position: relative;
-  top: -2rem;
+  top: -9rem;
   opacity: 0;
   z-index: 1;
+  transition: all 0.3s linear;
 }
 
 .event-card:hover .event-card-heading {
@@ -211,7 +217,7 @@
 
 .event-link {
   position: relative;
-  top: 2rem;
+  top: 9rem;
   opacity: 0;
   z-index: 1;
 }
@@ -248,6 +254,10 @@
   .event-container {
     grid-template-columns: 1fr;
   }
+ 
+  .event-about{
+    font-size: 2rem;
+  }
 
   .event-cards {
     gap: 0.5rem;
@@ -256,6 +266,6 @@
   }
 
   .event-card {
-    min-width: 6rem;
+    min-width: 5.5rem;
   }
 }

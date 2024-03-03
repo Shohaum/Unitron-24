@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: center;
   padding-left: 1rem;
-  background-color: #333;
+  background-color: #000;
   z-index: 99999;
 }
 
@@ -31,7 +31,7 @@
 .sidebar {
   width: 16rem;
   height: calc(100vh - 50px);
-  background-color: #333;
+  background-color: #000;
   position: fixed;
   top: 50px;
   right: 0;
@@ -114,7 +114,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: #333;
+  background: #000;
   display: grid;
   place-items: center;
   color: white;
@@ -126,7 +126,7 @@
 .nav-menu li .active .back,
 .nav-menu li a:hover .front,
 .nav-menu li a:hover .back {
-  background-color: yellow;
+  background-color: #efeb0f;
   background-size: 5px 5px;
   background-position: 0 0, 30px 30px;
   color: black;
@@ -169,6 +169,10 @@ aside .sidebar-drop-down{
 
 /* Media */
 @media screen and (max-width: 700px) {
+  .nav{
+    padding-right: 1rem;
+  }
+  
   .nav-menu {
     display: none;
   }

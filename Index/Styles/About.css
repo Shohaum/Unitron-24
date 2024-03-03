@@ -4,12 +4,6 @@
     gap: 2rem;
 }
 
-.robo-container{
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    padding-bottom: 5rem;
-}
 
 .about-image{
     height: 25rem;
