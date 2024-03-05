@@ -11,6 +11,7 @@
     position: relative;
     font-size: 0.78rem;
     letter-spacing: 1px;
+    overflow: hidden;
 }
 
 .sponser-container > h3::before, .sponser-container > h3::after{

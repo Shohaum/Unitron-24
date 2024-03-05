@@ -38,7 +38,7 @@
   
   figure figcaption h1 {
     /* font: normal normal 400 240% / 1.5cap "Della Respira", serif; */
-    font-family: "Uni";
+    font-size: 2.3rem;
     letter-spacing: 1px;
     padding: 0 0 10px 0;
     margin: 0 0 20px 0;
@@ -345,7 +345,7 @@
   @media (max-width: 600px) {
 
     figure figcaption h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       text-align: center;
       text-wrap: wrap;
     }

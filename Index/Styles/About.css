@@ -178,3 +178,22 @@
         margin-top: 1rem;
     }
 }
+
+
+@media screen and (max-width: 414px){
+    .fadetop{
+        height: 25%;
+    }
+    
+    .fadeleft{
+        width: 40%;
+    }
+    
+    .about-image::before{
+        width: 40%;
+    }
+    
+    .about-image::after{
+        height: 50%;
+    }
+}
