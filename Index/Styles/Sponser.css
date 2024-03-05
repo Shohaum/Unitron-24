@@ -32,7 +32,7 @@
 .sponser-container > h3::after{
     background: #fff;
     width: 0.25rem;
-    animation: blink 500ms infinite forwards,
+    animation: blink 1s infinite forwards,
                 reveal 5s 1 steps(14) 2s forwards;
 }
 
