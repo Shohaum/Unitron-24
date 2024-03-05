@@ -12,7 +12,7 @@
 
 .event-about {
   margin: auto;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   position: relative;
   text-transform: capitalize;
@@ -262,7 +262,7 @@
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 430px) {
   .event-section{
     padding: 0 1rem;
   }

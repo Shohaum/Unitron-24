@@ -3,7 +3,7 @@
 }
 
 .home-hero {
-  height: 20rem;
+  height: 18rem;
   display: grid;
   place-content: center;
 }
@@ -12,7 +12,7 @@
   filter: drop-shadow(-4px 2px 40px  #efeb0fb7 );
   width: 40rem;
   opacity: 0;
-  animation: fadeIn 1s linear 4.8s 1 forwards;
+  animation: fadeIn 1s linear 3.8s 1 forwards;
 }
 
 
