@@ -10,6 +10,7 @@
 .sponser-container > h3{
     position: relative;
     font-size: 1rem;
+    letter-spacing: 1px;
 }
 
 .sponser-container > h3::before, .sponser-container > h3::after{
@@ -26,19 +27,19 @@
 }
 
 .sponser-container > h3::before{
-    animation: reveal 5s 1 steps(14) 2s forwards;
+    animation: reveal 6s infinite steps(14) 2s forwards alternate-reverse;
 }
 
 .sponser-container > h3::after{
     background: #fff;
-    width: 0.25rem;
-    animation: blink 1s infinite forwards,
-                reveal 5s 1 steps(14) 2s forwards;
+    width: 0.27rem;
+    animation: blink 0.7s infinite forwards,
+                reveal 6s infinite steps(14) 2s forwards alternate-reverse;
 }
 
 @keyframes reveal {
     to{
-        left: 100%;
+        left: 110%;
     }
 }
 
