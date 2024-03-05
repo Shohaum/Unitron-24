@@ -9,11 +9,11 @@
 }
 
 .countdown{
-    --number-color: hsl(0 0% 100%);
-    --text-color: hsl(0 0% 25%);
+    --number-color: #ff0000;
+    --text-color: #fff;
     --dot-color: hsl(0 0% 10%);
-    --dot-color-remaining: hsl(182, 100%, 66%);
-    --dot-color-active: hsl(0 100% 50%);
+    --dot-color-remaining: yellow;
+    --dot-color-active: white;
     font-family: system-ui, sans-serif;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
