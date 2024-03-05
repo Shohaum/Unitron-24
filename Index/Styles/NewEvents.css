@@ -12,7 +12,6 @@
     padding: 2rem;
     font-size: clamp(5.8rem, 0.3vw + 5.4rem, 6.3rem);
     border: 1px solid white;
-    /* transform: translate(-50%, -50%) scale(600%); */
     transform: translate(-50%, -50%);
     cursor: pointer;
     transition: all 0.3s linear;
@@ -26,7 +25,6 @@
 .new-event-opened .event-header span{
     top: 20%;
     font-size: 2rem;
-    /* transform: translate(-50%, -50%) scale(300%); */
 }
 
 .new-event-header-container > span{
@@ -63,21 +61,34 @@
     transform: scale(1);
 }
 
+@media screen and (max-width: 750px){
+    .event-header > span{
+        font-size: clamp(4rem, 0.3vw + 4.5rem, 4.8rem);
+    }
+}
+
 @media screen and (max-width: 650px){
     .events-container{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .event-header > span{
+        font-size: clamp(3rem, 0.3vw + 3.5rem, 4rem);
     }
 }
 
 @media screen and (max-width: 550px){
     .event-header > span{
-        font-size: clamp(3.5rem, 0.3vw + 3rem, 4rem);
-        /* transform: translate(-50%, -50%) scale(400%); */
+        font-size: clamp(2rem, 0.3vw + 2.5rem, 3rem);
     }
 }
 
 @media screen and (max-width: 350px){
     .events-container{
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .event-header > span{
+        font-size: clamp(1.8rem, 0.3vw + 2rem, 2.5rem);
     }
 }

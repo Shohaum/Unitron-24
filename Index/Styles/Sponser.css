@@ -9,7 +9,7 @@
 
 .sponser-container > h3{
     position: relative;
-    font-size: 1rem;
+    font-size: 0.78rem;
     letter-spacing: 1px;
 }
 
@@ -39,7 +39,7 @@
 
 @keyframes reveal {
     to{
-        left: 110%;
+        left: 108%;
     }
 }
 
