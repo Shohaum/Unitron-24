@@ -14,7 +14,7 @@
 
 .footer-row .footer-col h4 {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -59,6 +59,7 @@
   margin: 20px 0;
   color: #bfbfbf;
   max-width: 300px;
+  font-size: 0.8rem;
 }
 
 .footer-col form {
@@ -112,7 +113,7 @@
 
 .contact > h4{
   margin-bottom: 20px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: white;
   font-weight: 400;
 }
@@ -211,12 +212,13 @@
 
 .aaa p {
   position: absolute;
-  top: 0.7em;
+  top: 0.95em;
   left: 1.2em;
   margin: 0;
   padding: 0;
   transition: .5s;
   color: #bc2a8d;
+  font-size: 0.65rem;
 }
 
 .aaa svg {

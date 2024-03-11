@@ -2,6 +2,7 @@
     height: 10rem;
     position: relative;
     transition: all 0.3s linear;
+    filter: drop-shadow(4px 3px 5px #05f2a0);
 }
 
 .event-header span{
@@ -9,9 +10,11 @@
     left: 50%;
     top: 50%;
     width: max-content;
-    padding: 2rem;
-    font-size: clamp(5.8rem, 0.3vw + 5.4rem, 6.3rem);
-    border: 1px solid white;
+    padding: 1rem 10.5rem;
+    font-size: clamp(3rem, 0.3vw + 3.1rem, 4rem);
+    clip-path: polygon(0 0, 92% 0, 100% 38%, 100% 100%, 7% 100%, 0 55%);
+    background-color: rgb(234, 238, 9);
+    color: #000;
     transform: translate(-50%, -50%);
     cursor: pointer;
     transition: all 0.3s linear;
@@ -24,7 +27,7 @@
 
 .new-event-opened .event-header span{
     top: 20%;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .new-event-header-container > span{
@@ -37,6 +40,7 @@
     gap: 0.5rem;
     height: 0;
     width: 0;
+    padding: 0 0.5rem;
 }
 
 .new-event-opened .events-container{
@@ -61,9 +65,10 @@
     transform: scale(1);
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 768px){
     .event-header > span{
-        font-size: clamp(4rem, 0.3vw + 4.5rem, 4.8rem);
+        font-size: clamp(2.3rem, 0.3vw + 2.5rem, 2.8rem);
+        padding: 1rem 5rem;
     }
 }
 
@@ -73,13 +78,19 @@
     }
 
     .event-header > span{
-        font-size: clamp(3rem, 0.3vw + 3.5rem, 4rem);
+        font-size: clamp(2rem, 0.3vw + 2.1rem, 2.5rem);
+        
     }
 }
 
 @media screen and (max-width: 550px){
     .event-header > span{
-        font-size: clamp(2rem, 0.3vw + 2.5rem, 3rem);
+        font-size: clamp(1.4rem, 0.1vw + 1.6rem, 1.8rem);
+        padding: 1rem 3rem;
+    }
+    .new-event-opened .event-header span{
+        top: 20%;
+        font-size: 1.3rem;
     }
 }
 
