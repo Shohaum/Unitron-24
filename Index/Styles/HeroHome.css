@@ -29,6 +29,14 @@
 }
 
 @media screen and (max-width: 414px){
+  .hero-container{
+    padding: 0;
+}
+
+.home-hero {
+  height: 16rem;
+}
+
   .home-hero > img {
     width: 22rem;
   }
