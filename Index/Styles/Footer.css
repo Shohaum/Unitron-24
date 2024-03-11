@@ -58,7 +58,6 @@
 .footer-col p {
   margin: 20px 0;
   color: #bfbfbf;
-  max-width: 300px;
   font-size: 0.8rem;
 }
 
@@ -162,7 +161,7 @@
   justify-content: center;
   padding: 1rem 0;
   gap: 1.3rem;
-  font-family: "Open Sans";
+  font-family: "Uni";
   letter-spacing: 1px;
   font-size: 0.85rem;
   color: gray;

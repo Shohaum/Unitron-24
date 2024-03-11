@@ -138,19 +138,19 @@
 }
 
 .tech-card {
-  background-image: url("https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277417_1280.jpg");
+  background-image: url("../Assets/Events/4.jpg");
 }
 
 .robo-card {
-  background-image: url("https://cdn.pixabay.com/photo/2018/05/07/10/48/husky-3380548_1280.jpg");
+  background-image: url("../Assets/Events/3.jpg");
 }
 
 .coding-card {
-  background-image: url("https://cdn.pixabay.com/photo/2016/02/11/17/00/dog-1194087_1280.jpg");
+  background-image: url("../Assets/Events/8.jpg");
 }
 
 .non-tech-card {
-  background-image: url("https://cdn.pixabay.com/photo/2017/12/29/10/47/animal-company-3047244_1280.jpg");
+  background-image: url("../Assets/Events/1.jpg");
 }
 
 .event-card-glow{
