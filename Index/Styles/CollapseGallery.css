@@ -267,7 +267,7 @@
   
   /* Change Gallery Images */
   .collapse-gallery section div:first-of-type {
-    background-image: url("/Assets/Home/24.jpg");
+    background-image: url("/Assets/Home/0.jpg");
   }
   
   .collapse-gallery section div + div {
