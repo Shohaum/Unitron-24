@@ -205,6 +205,10 @@
     letter-spacing: 1px;
     color: rgb(209, 206, 206);
   }
+
+  .contact h4{
+    font-size: 0.8rem;
+  }
 }
 
 
