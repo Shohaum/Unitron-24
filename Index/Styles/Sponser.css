@@ -56,3 +56,9 @@
     place-content: center;
     margin-bottom: 5rem;
 }
+
+@media screen and (max-width: 430px){
+    .sponsers > h3{
+        font-size: 1.3rem;
+    }
+}

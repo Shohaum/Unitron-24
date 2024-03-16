@@ -295,4 +295,21 @@
     width: 7.5rem;
     margin-top: calc(var(--i) * 1.6rem);
   }
+
+  .event-about{
+    font-size: 1.3rem;
+  }
+
+  .event-card-heading{
+    font-size: 0.8rem;
+  }
+
+  .event-card a{
+    font-size: 0.8;
+  }
+}
+
+
+@media screen and (max-width: 430px){
+  
 }

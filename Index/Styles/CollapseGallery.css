@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 2rem;
+    padding: 0 1rem;
     width: 100vw;
     overflow-x: hidden;
 }
@@ -346,9 +346,21 @@
   @media (max-width: 600px) {
 
     figure figcaption h1 {
-      font-size: 2rem;
+      font-size: 1.3rem;
       text-align: center;
       text-wrap: wrap;
+    }
+
+    .collapse-gallery figure figcaption p {
+      font-size: 0.9rem;
+    }
+
+    .collapse-btn{
+      width: 6.2rem;
+    }
+
+    .collapse-gallery .collapse-btn span{
+      font-size: 0.9rem;
     }
 
     .collapse-gallery section {

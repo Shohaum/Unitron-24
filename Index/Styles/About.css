@@ -183,7 +183,7 @@
 }
 
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 430px){
     .fadetop{
         height: 25%;
     }
@@ -198,5 +198,27 @@
     
     .about-image::after{
         height: 50%;
+    }
+
+    .about-content{
+        gap: 0.5rem;
+    }
+
+    .about-content > h3{
+        font-size: 1.2rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .about-content > p{
+        font-size: 0.75rem;
+        font-weight: 300;
+    }
+
+    .community-link{
+        padding: 0.9rem 1rem; 
+    }
+
+    .community span{
+        font-size: 0.8rem;
     }
 }
