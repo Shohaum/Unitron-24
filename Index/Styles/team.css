@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Uni', sans-serif;
+    list-style: none;
 }
 
 body{
@@ -18,6 +19,10 @@ body{
     background: #000;
 }
 
+.wrapper{
+    margin-top: 4rem;
+}
+
 .wrapper .title{
     text-align: center;
 }
@@ -25,12 +30,12 @@ body{
 .title h4{
     display: inline-block;
     padding: 20px;
-    color: #585757;
+    color: rgb(234, 238, 9);
     font-size: 50px;
     font-weight: 500;
     letter-spacing: 1.2px;
     word-spacing: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgb(234, 238, 9);
     border-radius: 15px;
 
     text-transform: uppercase;
@@ -144,7 +149,7 @@ img
 }
 
 /* My shit */
-.faculty-mentor-container, .admin-container, .tech-head-container, .non-tech-head-container, .gaming-head-container, .coding-head-container,
+.faculty-mentor-container, .mentor-container, .admin-container, .tech-head-container, .non-tech-head-container, .gaming-head-container, .coding-head-container,
 .design-head-container, .sponsor-head-container
 {
     display: flex;
@@ -164,7 +169,7 @@ img
     margin-bottom: 1.5rem;
 }
 
-.faculty > h4{
+.faculty > h4, .mentors h4{
     text-decoration: underline;
     font-size: 1.5rem;
 }
