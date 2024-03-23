@@ -1,0 +1,239 @@
+.events-container{
+    margin-top: 4rem;
+}
+
+.events-container h3{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.event-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 4.5rem;
+}
+
+.non-tech-container{
+    display: grid;
+    grid-template-columns:  repeat(4, 15rem);
+}
+
+.non-tech-container > .event-card:nth-child(5){
+    grid-column: 2 / span 1;
+}
+
+.event-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D3494E;
+    width: 15rem;
+    height: 25rem;
+    clip-path: polygon(100% 0, 100% 91%, 90% 100%, 0 100%, 0 0);
+    cursor: pointer;
+}
+
+.event-card .event-image{
+    width: 97.5%;
+    height: 99%;
+    clip-path: polygon(100% 0, 100% 91%, 90% 100%, 0 100%, 0 0);
+}
+
+.event-card img{
+    height: 100%;
+}
+
+.event-card img{
+    object-fit: cover;
+}
+
+/* Modal */
+
+.event-card-modal{
+    /* background-color: rgba(255, 255, 255, 0.7); */
+    background: rgba(39, 39, 39, 0.8);
+    position: fixed;
+    top: 3.8rem;
+    left: 0;
+    height: calc(100vh - 3.8rem);
+    width: 100%;
+    display: grid;
+    place-items: center;
+    display: none;
+}
+
+.modal-close-btn{
+    position: fixed;
+    top: 4.5rem;
+    right: 1rem;
+}
+
+.modal-container{
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    gap: 0.5rem;
+}
+
+.modal-container .left-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    height: 15rem;
+    clip-path: polygon(9% 0, 100% 0, 100% 100%, 14% 100%, 9% 97%, 0 97%, 0 7%);
+}
+
+.modal-container .left-content-wrapper{
+    background: #D3494E;
+    width: 97.5%;
+    height: 14.8rem;
+    clip-path: polygon(9% 0, 100% 0, 100% 100%, 14% 100%, 9% 97%, 0 97%, 0 7%);
+}
+
+.modal-event-image{
+    margin-left: auto;
+    height: 100%;
+    width: 8rem;
+}
+
+.modal-event-image img{
+    object-fit: cover;
+    height: 100%;
+}
+
+.modal-container .right-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16rem;
+    width: 18rem;
+    background: red;
+    clip-path: polygon(9% 0, 15% 2%, 100% 2%, 100% 91%, 95% 100%, 0 100%, 0 0);
+}
+
+.right-content .right-content-wrapper{
+    height: 98.5%;
+    width: 98.2%;
+    background-color: #D3494E;
+    clip-path: polygon(9% 0, 15% 2%, 100% 2%, 100% 91%, 95% 100%, 0 100%, 0 0);
+    padding: 1rem;
+}
+
+.event-rule h6{
+    padding-bottom: 0.1rem;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #fff;
+}
+
+.event-desc{
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+    margin-top: 0.5rem;
+    overflow: scroll;
+}
+
+.modal-btn-container{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.modal-btn-container a {
+    border: none;
+    display: block;
+    position: relative;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.9rem;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+    color: #fff;
+    z-index: 1;
+    font-family: inherit;
+    font-weight: 500;
+  }
+  
+  .modal-btn-container a span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    border: 3px solid #fff;
+  }
+  
+  .modal-btn-container a span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 500%;
+    background: #D3494E;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-60deg);
+    transition: all 0.3s;
+  }
+  
+  .modal-btn-container a:hover .modal-btn-span::before {
+    transform: translate(-50%, -50%) rotate(-180deg);
+    width: 110%;
+    background: rgb(234, 238, 9);
+  }
+  
+  .modal-btn-container a:hover {
+    color: black;
+  }
+  
+  .modal-btn-container a:active .modal-btn-span::before {
+    background: #fff;
+  }
+
+
+@media screen and (max-width: 1025px){
+    
+    .non-tech-container{
+        grid-template-columns:  repeat(3, 15rem);
+    }
+    
+    .non-tech-container > .event-card:nth-child(5){
+        grid-column: unset;
+    }
+    
+    
+}
+
+@media screen and (max-width: 800px){  
+    .non-tech-container{
+        grid-template-columns:  repeat(2, 15rem);
+    }
+    
+}
+
+@media screen and (max-width: 511px){  
+    .non-tech-container{
+        grid-template-columns:  repeat(1, 15rem);
+    }
+    
+}
+
+
+@media screen and (max-width: 431px){
+    .modal-container{
+        grid-template-columns: 1fr;
+        /* place-content: center; */
+    }
+
+    .modal-container .left-content{
+        width: 10rem;
+        height: 15rem;
+        place-self: center;
+    }
+}
